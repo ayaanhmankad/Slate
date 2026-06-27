@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MathMasters</title>
+  <link rel="stylesheet" href="mathmasters.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>MathMasters</h1>
+    <button id="homeBtn">Home</button>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <h2>Welcome to MathMasters!</h2>
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+    <button id="guestBtn">Guest Mode</button>
+  </section>
+
+  <!-- AUTH -->
+  <section id="auth" class="hidden">
+    <h2 id="authTitle">Login</h2>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button id="authSubmit">Submit</button>
+  </section>
+
+  <!-- PLACEMENT QUIZ -->
+  <section id="placement" class="hidden"></section>
+
+  <!-- DASHBOARD -->
+  <section id="dashboard" class="hidden">
+    <h2 id="gradeTitle"></h2>
+    <div id="skills"></div>
+    <button id="cfuBtn" class="hidden">Check For Understanding</button>
+  </section>
+
+  <!-- PRACTICE SECTION -->
+  <section id="practiceSection" class="hidden">
+    <h2 id="practiceTitle"></h2>
+    <div id="practiceContent"></div>
+  </section>
+
+  <!-- CFU SECTION -->
+  <section id="cfuSection" class="hidden">
+    <h2 id="cfuTitle"></h2>
+    <div id="cfuContent"></div>
+  </section>
+
+  <!-- GUEST DASHBOARD -->
+  <section id="guestDashboard" class="hidden"></section>
+
+  <script src="mathmasters.js"></script>
+</body>
+</html>
