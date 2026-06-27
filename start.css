@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b304a;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #d5ecf8eb;
+}
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d5ecf8eb;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+li {
+    margin-top: 10px;
+}
