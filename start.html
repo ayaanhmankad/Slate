@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SLATE</title>
-        <link rel="stylesheet" href="start.css">
-        <script src="start.js" defer></script>
-    </head>
-    <body>
-    <h1>SLATE</h1>
-    <p>Slate is a simple web application which contains many smaller applications.</p>
-    <p>Applications:</p>
-    <section>
-        <button><a href="calculator.html">Calculator</a></button>
-    <button><a href="todo.html">To-Do List</a></button>
-    <button><a href="weather.html">Weather App</a></button>
-    <button><a href="notes.html">Notes App</a></button>
-    <button><a href="mathmasters.html">Math Masters</a></button>
-    <button><a href="games.html">Games</a></button>
-    </section>
-    
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLATE</title>
+  <link rel="stylesheet" href="start.css">
+  <script src="start.js" defer></script>
+</head>
+<body>
+  <h1>SLATE</h1>
+  <p>Slate is a simple web application which contains many smaller applications.</p>
+  
+  <!-- Updated Search Bar Container with a Search Button -->
+  <div class="search-container">
+    <input type="text" id="app-search" placeholder="🔍 Enter URL or search safely...">
+    <button id="search-go-btn">Go</button>
+  </div>
+
+  <p>Applications:</p>
+  
+  <section>
+    <a href="calculator.html" class="app-btn">Calculator</a>
+    <a href="todo.html" class="app-btn">To-Do List</a>
+    <a href="weather.html" class="app-btn">Weather App</a>
+    <a href="notes.html" class="app-btn">Notes App</a>
+    <a href="mathmasters.html" class="app-btn">Math Masters</a>
+    <a href="games.html" class="app-btn">Games</a>
+  </section>
+</body>
 </html>

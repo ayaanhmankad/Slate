@@ -2,7 +2,7 @@
 * { box-sizing: border-box; margin:0; padding:0; font-family: 'Arial', sans-serif; }
 
 /* BODY & HEADER */
-body { background: #f0f4f8; color: #333; padding: 20px; transition: background 0.3s ease; }
+body { background: #f0f4f8; color: #333; padding: 20px; transition: background 0.3s ease; background-image: url('images.jpg'); background-size: cover; background-position: center; }
 header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 header h1 { font-size: 2em; color: #2b6cb0; }
 header button { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.2s ease; background: #2b6cb0; color: #fff; }

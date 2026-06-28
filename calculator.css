@@ -1,44 +1,114 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: #2b304a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-   margin: 0;
-    padding: 0;
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: #2b304a; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; /* Changed from 50vh to 100vh to center everything vertically on the screen */
+  margin: 0; 
+  padding: 20px; 
+  box-sizing: border-box;
+  background-image: url('images.jpg');
+  background-size: cover; 
+  background-position: center; /* Ensures the beach image stays centered */
+} 
+
+h1 { 
+  text-align: center; /* Fixed 'top' to 'center' so it aligns correctly */
+  margin-top: 20px; 
+  font-size: 54px; /* Made bigger to pop against the beach background */
+  font-weight: bold; 
+  color: #d5ecf8eb; 
+  border-radius: 5px; 
+  border-width: 5px; 
+  border-color: #d5ecf8eb; 
+  border-style: solid; 
+  font-family: cursive; 
+  padding: 10px 30px; /* Adds space inside the border so it doesn't crowd your text */
+  background-color: rgba(43, 48, 74, 0.6); /* Adds a subtle dark tint behind the title to make it easy to read */
+} 
+
+p { 
+  text-align: center; 
+  margin-top: 15px; 
+  font-size: 18px; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Adds a shadow so white text is readable over sand/waves */
 }
-h1 {
-    text-align: top;
-    margin-top: 50px;
-    font-size: 36px;
-    font-weight: bold;
-    color: #d5ecf8eb;
-    border-radius: 5px;
-    border-width: 5px;
-    border-color: #d5ecf8eb;
-    border-style: solid;
-    font-family: cursive;
+
+/* Your Search Bar Container */
+.search-container { 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 30px; 
+  width: 100%;
+  max-width: 500px;
+} 
+
+/* The Input Field */
+input[type="text"] { 
+  flex: 1; /* Allows the bar to expand beautifully next to the button */
+  height: 45px; 
+  font-size: 18px; 
+  padding: 0 15px; 
+  border-radius: 25px; /* Pill-shaped like Google */
+  border: none; 
+  margin-right: 10px; 
+  background-color: #d5ecf8eb; 
+  color: #2b304a; 
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+} 
+
+/* The Go Button sitting next to the Input */
+#search-go-btn {
+  height: 45px;
+  padding: 0 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2196F3;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
 }
-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 30px;
-    row-gap: 20px;
-    justify-content: center;
-    size: 30px;
+
+#search-go-btn:hover {
+  background-color: #0b7dda;
 }
-input[type="text"] {
-    width: 200px;
-    height: 40px;
-    font-size: 18px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 10px;
-    background-color: #d5ecf8eb;
-    color: #2b304a;
-    align-items: center;
+
+/* The Grid Container holding your applications */
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+  max-width: 700px;
+}
+
+/* Individual App Shortcut Buttons */
+.app-btn {
+  font-size: 16px;
+  color: #2b304a;
+  background-color: #d5ecf8eb;
+  border: solid 2px #262728eb;
+  border-radius: 8px;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.app-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px); /* Makes the card lift up slightly when hovered */
 }
