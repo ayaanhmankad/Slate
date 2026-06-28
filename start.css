@@ -11,6 +11,11 @@ h1 {
     font-size: 36px;
     font-weight: bold;
     color: #d5ecf8eb;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #d5ecf8eb;
+    border-style: solid;
+    font-family: cursive;
 }
 p {
     text-align: center;
@@ -18,14 +23,25 @@ p {
     font-size: 18px;
     color: #d5ecf8eb;
 }
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
-    color: #d5ecf8eb;
 }
-li {
-    margin-top: 10px;
+button {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #2b304a;
+    background-color: #d5ecf8eb;
+    border: solid 2px #262728eb;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+p1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
     color: #d5ecf8eb;
 }
