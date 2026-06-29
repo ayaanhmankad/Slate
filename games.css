@@ -1,0 +1,72 @@
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: #2b304a; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; /* Changed from 50vh to 100vh to center everything vertically on the screen */
+  margin: 0; 
+  padding: 20px; 
+  box-sizing: border-box;
+  background-image: url('images.jpg');
+  background-size: cover; 
+  background-position: center;
+} 
+
+h1 { 
+  text-align: center; /* Fixed 'top' to 'center' so it aligns correctly */
+  margin-top: 20px; 
+  font-size: 54px; /* Made bigger to pop against the beach background */
+  font-weight: bold; 
+  color: #d5ecf8eb; 
+  border-radius: 5px; 
+  border-width: 5px; 
+  border-color: #d5ecf8eb; 
+  border-style: solid; 
+  font-family: cursive, sans-serif; /* Changed to a cursive font for a more playful, beachy feel */
+  padding: 10px 30px; /* Adds space inside the border so it doesn't crowd your text */
+  background-color: rgba(43, 48, 74, 0.6); /* Adds a subtle dark tint behind the title to make it easy to read */
+} 
+
+p { 
+  text-align: center; 
+  margin-top: 15px; 
+  font-size: 18px; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Adds a shadow so white text is readable over sand/waves */
+}
+
+section { 
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  max-width: 650px;
+  gap: 15px; 
+  margin-top: 10px;
+} 
+
+/* 9. Shortcut App Button Tiles */
+button { 
+  font-size: 14px; 
+  color: #d5ecf8eb; 
+  background-color: rgba(213, 236, 248, 0.08); /* Transparent frosted glass look */
+  border: 1px solid rgba(213, 236, 248, 0.2);
+  border-radius: 10px; 
+  padding: 12px 18px; 
+  text-decoration: none; 
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.1s, border-color 0.2s;
+} 
+
+/* 10. Hover Effect for Tiles */
+.app-btn:hover {
+  background-color: rgba(213, 236, 248, 0.18);
+  border-color: #d5ecf8eb;
+  transform: translateY(-2px); /* Lifts up slightly like a real card shortcut */
+}
