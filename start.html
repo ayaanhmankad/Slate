@@ -8,12 +8,12 @@
   <script src="start.js" defer></script>
 </head>
 <body>
+
   <h1>SLATE</h1>
   <p>Slate is a simple web application which contains many smaller applications.</p>
   
-  <!-- Updated Search Bar Container with a Search Button -->
   <div class="search-container">
-    <input type="text" id="app-search" placeholder="🔍 Enter URL or search safely...">
+    <input type="text" id="app-search" placeholder="Enter URL or search safely...">
     <button id="search-go-btn">Go</button>
   </div>
 
@@ -27,5 +27,9 @@
     <a href="mathmasters.html" class="app-btn">Math Masters</a>
     <a href="games.html" class="app-btn">Games</a>
   </section>
+
+  <!-- The Embedded Web Browser View Frame Window (Hidden until a search happens) -->
+  <iframe id="browser-view" src="about:blank" style="display: none;"></iframe>
+
 </body>
 </html>

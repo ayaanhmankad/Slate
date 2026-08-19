@@ -1,4 +1,4 @@
-/* 1. Global Reset & Body Setup */
+
 body { 
   font-family: Arial, sans-serif; 
   margin: 0; 
@@ -26,31 +26,31 @@ h1 {
   letter-spacing: -2px; 
 } 
 
-/* 3. Subtitle Descriptions */
+
 p { 
   text-align: center; 
   margin: 0 0 30px 0; 
   font-size: 16px; 
-  color: #9fa6cc; /* Slightly softer blue-gray for secondary text */
+  color: #9fa6cc; 
   max-width: 500px;
   line-height: 1.5;
 } 
 
-/* 4. Google-Style Search Container */
+
 .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 580px; /* Exact width constraint of a standard search box */
+  max-width: 580px; 
   margin-bottom: 25px;
   position: relative;
 }
 
-/* 5. Pill-Shaped Google Search Input Bar */
+
 #app-search {
   width: 100%;
-  padding: 14px 100px 14px 25px; /* Extra room on the right for the embedded button */
+  padding: 14px 100px 14px 25px; 
   font-size: 16px;
   color: #2b304a;
   background-color: #d5ecf8eb;
@@ -67,7 +67,7 @@ p {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* 7. Embedded "Go" Button (Sits clean inside the search bar) */
+
 #search-go-btn {
   position: absolute;
   right: 6px;
@@ -75,7 +75,7 @@ p {
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #2196F3; /* Bright tech blue */
+  background-color: #2196F3; 
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -86,36 +86,142 @@ p {
   background-color: #0b7dda;
 }
 
-/* 8. App Grid Launcher Container (Like Google Shortcut Tiles) */
-section { 
+
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: #2b304a; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  margin: 0; 
+  padding: 40px 20px; 
+  box-sizing: border-box;
+  background-image: url('https://unsplash.com'); 
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed; 
+} 
+
+
+h1 { 
+  text-align: center; 
+  margin: 20px 0 0 0; 
+  font-size: 54px; 
+  font-weight: bold; 
+  color: #d5ecf8eb; 
+  border-radius: 12px; 
+  border: solid 5px #d5ecf8eb; 
+  font-family: cursive; 
+  padding: 10px 40px; 
+  background-color: rgba(43, 48, 74, 0.7); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+} 
+
+
+p { 
+  text-align: center; 
+  margin-top: 15px; 
+  margin-bottom: 5px;
+  font-size: 18px; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.search-container { 
   display: flex; 
   flex-direction: row; 
-  flex-wrap: wrap;
-  justify-content: center; 
   align-items: center; 
-  max-width: 650px;
-  gap: 15px; 
-  margin-top: 10px;
+  justify-content: center; 
+  margin-top: 25px; 
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 550px;
 } 
 
-/* 9. Shortcut App Button Tiles */
-.app-btn { 
-  font-size: 14px; 
-  color: #d5ecf8eb; 
-  background-color: rgba(213, 236, 248, 0.08); /* Transparent frosted glass look */
-  border: 1px solid rgba(213, 236, 248, 0.2);
-  border-radius: 10px; 
-  padding: 12px 18px; 
-  text-decoration: none; 
+
+input[type="text"] { 
+  flex: 1; 
+  height: 46px; 
+  font-size: 16px; 
+  padding: 0 20px; 
+  border-radius: 25px 0 0 25px; 
+  border: solid 2px #262728eb;
+  border-right: none; 
+  background-color: #d5ecf8eb; 
+  color: #2b304a; 
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   font-weight: 500;
-  min-width: 100px;
-  text-align: center;
-  transition: background-color 0.2s, transform 0.1s, border-color 0.2s;
 } 
 
-/* 10. Hover Effect for Tiles */
-.app-btn:hover {
-  background-color: rgba(213, 236, 248, 0.18);
-  border-color: #d5ecf8eb;
-  transform: translateY(-2px); /* Lifts up slightly like a real card shortcut */
+/* Focus glow state updates background color */
+input[type="text"]:focus {
+  background-color: #ffffff;
 }
+
+
+#search-go-btn {
+  height: 48px;
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2b304a;
+  background-color: #d5ecf8eb;
+  border: solid 2px #262728eb;
+  border-radius: 0 25px 25px 0; 
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#search-go-btn:hover {
+  background-color: #2196F3;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 750px;
+}
+
+/* 8. App Launch Link Buttons */
+.app-btn {
+  font-size: 15px;
+  color: #2b304a;
+  background-color: #d5ecf8eb;
+  border: solid 2px #262728eb;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.app-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px); /* Card hover lift animation */
+}
+
+/* 9. Live Web Iframe Dashboard box */
+#browser-view {
+  width: 95%;
+  max-width: 1050px;
+  height: 550px;
+  margin-top: 30px;
+  border: 3px solid #262728eb;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
